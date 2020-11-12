@@ -1,5 +1,5 @@
 /*
- * XDSDK Version 2.3.1
+ * XDSDK Version 2.3.4
  * 
  * 
  * 
@@ -196,6 +196,11 @@ namespace xdsdk
         public static void OpenProtocol(ProtocolType type)
         {
 			XDSDKImp.GetInstance().OpenProtocol(type);
+        }
+
+        public static void OpenUserMoment(XDMomentConfig config, string xdId)
+        {
+			XDSDKImp.GetInstance().OpenUserMoment(config, xdId);
         }
 	}
 }
