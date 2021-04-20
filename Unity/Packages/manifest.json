@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "com.tds.sdk": "https://github.com/xindong/TAPSDK_UPM.git#1.0.7.1",
-    "com.xd.sdk": "https://github.com/xindong/XDSDK_UPM.git#3.0.1",
+    "com.tds.sdk": "https://github.com/xindong/TAPSDK_UPM.git#1.0.8",
+    "com.xd.sdk": "https://github.com/xindong/XDSDK_UPM.git#3.1.0",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ide.rider": "1.1.4",
     "com.unity.ide.vscode": "1.2.3",
