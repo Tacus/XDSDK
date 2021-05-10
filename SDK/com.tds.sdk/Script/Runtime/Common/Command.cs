@@ -19,6 +19,8 @@ namespace TDSCommon
         public bool callback;
         [SerializeField]
         public string callbackId;
+        [SerializeField]
+        public bool onceTime;
 
         public Command()
         {
@@ -41,9 +43,19 @@ namespace TDSCommon
             this.service = service;
             this.method = method;
             this.callback = callback;
-            this.callbackId = this.callback ? TDSUUID.UUID():null;
+            this.callbackId = this.callback ? TDSUUID.UUID() : null;
         }
-        
+
+        public Command(string service, string method, bool callback, bool onceTime, Dictionary<string, object> dic)
+        {
+            this.args = dic == null ? null : Json.Serialize(dic);
+            this.service = service;
+            this.method = method;
+            this.callback = callback;
+            this.callbackId = this.callback ? TDSUUID.UUID() : null;
+            this.onceTime = onceTime;
+        }
+
         public class Builder
         {
             public string service;
@@ -54,7 +66,9 @@ namespace TDSCommon
 
             public string callbackId;
 
-            public Dictionary<string,object> args;
+            public bool onceTime;
+
+            public Dictionary<string, object> args;
 
             public Builder()
             {
@@ -73,31 +87,38 @@ namespace TDSCommon
                 return this;
             }
 
-            public Builder Args(Dictionary<string,object> dic)
+            public Builder OnceTime(bool onceTime)
+            {
+                this.onceTime = onceTime;
+                return this;
+            }
+
+            public Builder Args(Dictionary<string, object> dic)
             {
                 this.args = dic;
                 return this;
             }
 
-            public Builder Args(string key,object value)
+            public Builder Args(string key, object value)
             {
-                if(this.args == null)
+                if (this.args == null)
                 {
-                    this.args = new Dictionary<string,object>();
+                    this.args = new Dictionary<string, object>();
                 }
-                this.args.Add(key,value);
+                this.args.Add(key, value);
                 return this;
             }
 
             public Builder Callback(bool callback)
             {
                 this.callback = callback;
-                this.callbackId = this.callback ? TDSUUID.UUID():null;
+                this.callbackId = this.callback ? TDSUUID.UUID() : null;
                 return this;
             }
 
-            public Command CommandBuilder(){
-                return new Command(this.service,this.method,this.callback,this.args);
+            public Command CommandBuilder()
+            {
+                return new Command(this.service, this.method, this.callback, this.onceTime, this.args);
             }
         }
 
