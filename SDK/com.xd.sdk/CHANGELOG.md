@@ -1,5 +1,21 @@
 # ChangeLog
 
+## 3.1.2
+
+### BugFix
+
+* 修复 iOS Processor.cs 脚本未添加 TapTap URLTypes 的错误
+
+## 3.1.1
+
+### BugFix
+
+* 修复 iOS TapDB 数据上报错误
+
+### Dependencies
+
+* TapSDK Version ---> 1.0.9
+
 ## 3.1.0 
 
 ### Feature

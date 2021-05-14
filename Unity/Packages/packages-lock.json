@@ -1,11 +1,11 @@
 {
   "dependencies": {
     "com.tds.sdk": {
-      "version": "https://github.com/xindong/TAPSDK_UPM.git#1.1.4",
+      "version": "https://github.com/xindong/TAPSDK_UPM.git#1.1.5",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "ddb014b9bb75af8881542f1d936e97ca9d39b87e"
+      "hash": "afaa259986eb7c57c533d5a656338ebeb142c915"
     },
     "com.unity.collab-proxy": {
       "version": "1.2.16",
@@ -79,13 +79,13 @@
       }
     },
     "com.xd.sdk": {
-      "version": "https://github.com/xindong/XDSDK_UPM.git#3.1.0",
+      "version": "https://github.com/xindong/XDSDK_UPM.git#3.2.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.tds.sdk": "https://github.com/xindong/TAPSDK_UPM.git#1.0.8"
+        "com.tds.sdk": "https://github.com/xindong/TAPSDK_UPM.git#1.1.5"
       },
-      "hash": "3f919a428bf86a9f8c8ca3550f1a835756e1b62d"
+      "hash": "cff25a5523ab645914d03443bed5ffeff8c623cf"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
