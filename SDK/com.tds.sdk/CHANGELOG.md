@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.1.8
+
+### New Feature
+
+* android 修改 TapDB 事件发送方式串行化
+
+### BugFix
+
+* IOS 修复升级 TapDB 版本时设备 ID 不一致问题
+
+## 1.1.7
+
+### BugFix
+
+* 修复 Android Bridge 方法匹配错误
+
+## 1.1.6
+
+### BugFix
+
+* 修复 iOS ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES 设置问题可能导致的 AppStore 审核无法通过
+
 ## 1.1.5
 
 ### optimization
@@ -43,24 +65,24 @@
 
 ## 1.0.5 (Abandoned)
 
- - 修复同时集成TapSDK和TDSSDK时iOS编译错误
+- 修复同时集成TapSDK和TDSSDK时iOS编译错误
 
- ## 1.0.4 (Abandoned)
+## 1.0.4 (Abandoned)
 
- - 常规更新已支持拓展版功能
+- 常规更新已支持拓展版功能
 
- ## 1.0.3 (Abandoned)
+## 1.0.3 (Abandoned)
 
- - TapSDK拓展版新增的支持性改动
- - TapTap内嵌动态新增场景化入口
- - TapDB 3.0
+- TapSDK拓展版新增的支持性改动
+- TapTap内嵌动态新增场景化入口
+- TapDB 3.0
 
- ## 1.0.1 (Abandoned)
+## 1.0.1 (Abandoned)
 
- - Android修复多线程情况下调用SDK方法偶现的崩溃。
+- Android修复多线程情况下调用SDK方法偶现的崩溃。
 
- ## 1.0.0 (Abandoned)
+## 1.0.0 (Abandoned)
 
- - TapTap 登陆
- - 内嵌动态
- - TapDB
+- TapTap 登陆
+- 内嵌动态
+- TapDB
